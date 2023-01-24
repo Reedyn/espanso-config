@@ -5,7 +5,11 @@ matches:
   replace: "→"
 - triggers: ["<--", ":larrow"]
   replace: "←"
+- triggers: ["<->", ":lrarrow"]
+  replace: "⟷"
 - triggers: [":uarrow"]
   replace: "↑"
 - triggers: [":darrow"]
   replace: "↓"
+- triggers: [":check"]
+  replace: "✓"
