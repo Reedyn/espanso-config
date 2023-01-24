@@ -17,7 +17,10 @@ matches:
   html: '<div style="font-size:10.0pt;color:black;"><p style="font-family:&quot;Arial&quot;,sans-serif;">Best regards,<br><b>{{myname}}</b><br><span style="font-family:&quot;Georgia&quot;,serif;"><i>Web Developer</i></span><br></p><p style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;color:black;background:white">———————————————</p><p><span style="font-family:&quot;Georgia&quot;,serif;"><i>University Library</i></span><br><span style="font-family:&quot;Arial&quot;,sans-serif;"><b>JÖNKÖPING UNIVERSITY</b></span><br><span style="font-family:&quot;Arial&quot;,sans-serif;"><b>E-POST</b></span> <a style="font-family:&quot;Georgia&quot;,serif;" href="mailto:{{juemail}})">{{juemail}}</a><br><span style="font-family:&quot;Arial&quot;,sans-serif;"><b>WEBB</b></span> <a style="font-family:&quot;Georgia&quot;,serif;" href="https://ju.se/library">ju.se/library</a></p></div>'
 
 - trigger: ":talintro"
-  form: "Talboksintroduktion med [[Namn]]"
+  replace: "Talboksintroduktion med {{clipboard}}"
+  vars:
+    - name: "clipboard"
+      type: "clipboard"
 
 - trigger: ":talresurs"
   markdown: "Här kommer lite bra resurser för talböcker.
@@ -44,7 +47,7 @@ matches:
     - name: "clipboard"
       type: "clipboard"
 
-- trigger: ':talsv'
+- trigger: ':bokatal'
   markdown: 'Hej {{form.name}}.
             
             
@@ -59,7 +62,7 @@ matches:
       params:
         layout: "Namn: [[name]]"
 
-- trigger: ':talen'
+- trigger: ':booktalk'
   markdown: 'Hi {{form.name}}.
 
 
