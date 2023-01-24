@@ -5,4 +5,16 @@ matches:
     replace: definitely
     propagate_case: true
     word: true
+  - triggers: ["iaf", "iallafall"]
+    replace: "i alla fall"
+    propagate_case: true
+    word: true
+  - triggers: ["abbonemang", "abonemang", "abbonnemang"]
+    replace: "abonnemang"
+    propagate_case: true
+    word: true
+  - triggers: ["literatur", "litterattur"]
+    replace: "litteratur"
+    propagate_case: true
+    word: true
 
