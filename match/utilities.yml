@@ -14,7 +14,8 @@ matches:
   - name: output
     type: shell
     params:
-      cmd: Invoke-WebRequest api.ipify.org -Headers @{"accept"="text/plain"} | Select-Object -Expand Content
+#      cmd: Invoke-WebRequest api.ipify.org -Headers @{"accept"="text/plain"} | Select-Object -Expand Content
+      cmd: curl api.ipify.org
 
 - trigger: :wtc
   replace: "{{output}}"
@@ -22,6 +23,7 @@ matches:
   - name: output
     type: shell
     params: 
-      cmd: Invoke-WebRequest whatthecommit.com/index.txt -Headers @{"accept"="text/plain"} | Select-Object -Expand Content
+#      cmd: Invoke-WebRequest whatthecommit.com/index.txt -Headers @{"accept"="text/plain"} | Select-Object -Expand Content
+      cmd: curl https://whatthecommit.com/index.txt
 
 
