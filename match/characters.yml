@@ -1,0 +1,11 @@
+parent: base
+matches:
+
+- triggers: ["-->", ":rarrow"]
+  replace: "→"
+- triggers: ["<--", ":larrow"]
+  replace: "←"
+- triggers: [":uarrow"]
+  replace: "↑"
+- triggers: [":darrow"]
+  replace: "↓"

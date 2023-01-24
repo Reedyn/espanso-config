@@ -1,0 +1,104 @@
+parent: base
+matches:
+
+# Insert front matter
+- trigger: ":frontmatter"
+  replace: "---\ntitle: \"$|$\"\ndescription: \"\"\nfeature_image: \"\"\ndate: {{datetime}}\ntags:\n---"
+  vars:
+    - name: datetime
+      type: date
+      params:
+        format: "%Y-%m-%d %H:%M:%S %:z"
+
+  # Outputs markdown link, with clipboard contents as the URL
+- triggers: [":md-link",":mdl"]
+  replace: "[$|$]({{clipboard}})"
+  vars:
+    - name: "clipboard"
+      type: "clipboard"
+
+  # Creates a HTML anchor element, with clipboard contents as href
+- triggers: [":html-link", ':alink']
+  replace: "<a href=\"{{clipboard}}\" />$|$</a>"
+  vars:
+    - name: "clipboard"
+      type: "clipboard"
+
+# Inserts a markdown code block
+- triggers: [":md-code"]
+  replace: "```\n$|$\n```"
+
+# Auto close brackets, quotes and formatting modifiers, and put cursor in center
+- trigger: ':(('
+  replace: '($|$)'
+- trigger: ':[['
+  replace: '[$|$]'
+- trigger: ':{{'
+  replace: '{$|$}'
+- trigger: ':<<'
+  replace: '<$|$>'
+- trigger: ':``'
+  replace: '`$|$`'
+- trigger: ":\''"
+  replace: "\'$|$\'"
+- trigger: ':""'
+  replace: '"$|$"'
+- trigger: ':__'
+  replace: '_$|$_'
+- trigger: ':**'
+  replace: '*$|$*'
+
+
+# Insert an image according to the Nunjucks syntax.
+- trigger: ":image"
+  replace: "{% image \"{{clipboard}}\", \"{{style}}\", \"$|$\" %}"
+  vars:
+    - name: "clipboard"
+      type: "clipboard"
+    - name: "style"
+      type: choice
+      params:
+        values:
+          - label: "Default"
+            id: ""
+          - label: "Inline"
+            id: "-inline"
+          - label: "Wide"
+            id: "-wide"
+          - label: "Full width"
+            id: "-full"
+
+# Insert a gallery figure
+- trigger: ":gallery"
+  replace: "<figure class=\"gallery {{style}}\">$|$</figure>"
+  vars:
+     - name: "style"
+       type: choice
+       params:
+         values:
+           - label: "Default"
+             id: ""
+           - label: "Wide"
+             id: "-wide"
+
+# Insert a gallery row figure
+- trigger: ":row"
+  replace: "<figure class=\"gallery-row\">$|$</figure>"
+
+# Insert a date string
+- trigger: ":today"
+  replace: "{{date}}"
+  vars:
+    - name: date
+      type: date
+      params:
+        format: "%Y-%m-%d"
+
+# Insert a datetime string
+- trigger: ":datetime"
+  replace: "{{datetime}}"
+  vars:
+    - name: datetime
+      type: date
+      params:
+        format: "%Y-%m-%d %H:%M:%S %:z"

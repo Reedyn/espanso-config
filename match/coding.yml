@@ -1,0 +1,6 @@
+parent: base
+matches:
+
+# Inserts CSS variable
+- trigger: ":var"
+  replace: "var(--$|$)"
