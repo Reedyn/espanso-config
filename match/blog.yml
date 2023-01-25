@@ -2,7 +2,7 @@ parent: base
 matches:
 
 # Insert front matter
-- trigger: ":frontmatter"
+- triggers: [":frontmatter",':fm']
   replace: "---\ntitle: \"$|$\"\ndescription: \"\"\nfeature_image: \"\"\ndate: {{datetime}}\ntags:\n---"
   vars:
     - name: datetime
@@ -86,7 +86,7 @@ matches:
   replace: "<figure class=\"gallery-row\">$|$</figure>"
 
 # Insert a date string
-- trigger: ":today"
+- triggers: [":today",':idag']
   replace: "{{date}}"
   vars:
     - name: date
