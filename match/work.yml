@@ -23,23 +23,18 @@ matches:
       type: "clipboard"
 
 - trigger: ":talresurs"
-  markdown: "Här kommer lite bra resurser för talböcker.
+  markdown: |
+            Här kommer lite bra resurser för talböcker.
             
             
-            * [Legimus](https://www.legimus.se/) – Tjänst för att söka och läsa talböcker som hanteras av MTM. Finns även i en mobilapp.
+            * [Legimus](https://www.legimus.se/) – Tjänst för att söka och läsa talböcker som hanteras av MTM. Finns även i en mobilapp.            
+            * [MTM](https://www.mtm.se/) – Myndigheten för tillgängliga medier            
+            * [EasyReader](https://www.legimus.se/100276/lasa-talbocker-och-e-text) – Läsprogram för dator för att läsa talböcker i Daisy-format            
+            * [TorTalk](https://ju.se/it-helpdesk/faq---manualer/program/tortalk.html) – Talsyntes för Windows och Mac OS som kan läsa upp markerad text på dator. Kan även läsa text på en bild med OCR.            
+            * [Bibliotekets guide för talböcker och talsynteser](https://guides.library.ju.se/talboksguiden)          
+            * [SPS](https://ju.se/student/service/stod-for-studenter-med-funktionsnedsattning-sps.html) – Stöd för studenter med funktionsnedsättning            
             
-            * [MTM](https://www.mtm.se/) – Myndigheten för tillgängliga medier
-            
-            * [EasyReader](https://www.legimus.se/100276/lasa-talbocker-och-e-text) – Läsprogram för dator för att läsa talböcker i Daisy-format
-            
-            * [TorTalk](https://ju.se/it-helpdesk/faq---manualer/program/tortalk.html) – Talsyntes för Windows och Mac OS som kan läsa upp markerad text på dator. Kan även läsa text på en bild med OCR.
-            
-            * [Bibliotekets guide för talböcker och talsynteser](https://guides.library.ju.se/talboksguiden)
-            
-            * [SPS](https://ju.se/student/service/stod-for-studenter-med-funktionsnedsattning-sps.html) – Stöd för studenter med funktionsnedsättning
-            
-            
-            Om det är något som du undrar kring någon av tjänsterna så är det bara att kontakta oss så hjälper vi till."
+            Om det är något som du undrar kring någon av tjänsterna så är det bara att kontakta oss så hjälper vi till.
 
 - trigger: ":proxy"
   replace: "https://proxy.library.ju.se/login?url={{clipboard}}"
@@ -48,14 +43,13 @@ matches:
       type: "clipboard"
 
 - trigger: ':bokatal'
-  markdown: 'Hej {{form.name}}.
+  markdown: |
+            Hej {{form.name}}.            
             
-            
-            För att komma igång med talböcker behöver vi ha en introduktion på ungefär 30 minuter där vi går igenom hur Legimus (tjänsten från Myndigheten för tillgängliga medier som vi använder för talböcker) fungerar samt vilka andra verktyg som du kan få tillgång till. Under samtalet som vi har antingen på plats i biblioteket eller över videomöte (Zoom) kommer du att behöva godkänna [användaravtalet för Legimus](https://old.legimus.se/Gemensamt/Dokument/Dokument/Låneregler.pdf) samt legitimera dig med fotolegitimation.
-            
+            För att komma igång med talböcker behöver vi ha en introduktion på ungefär 30 minuter där vi går igenom hur Legimus (tjänsten från Myndigheten för tillgängliga medier som vi använder för talböcker) fungerar samt vilka andra verktyg som du kan få tillgång till. Under samtalet som vi har antingen på plats i biblioteket eller över videomöte (Zoom) kommer du att behöva godkänna [användaravtalet för Legimus](https://old.legimus.se/Gemensamt/Dokument/Dokument/Låneregler.pdf) samt legitimera dig med fotolegitimation.            
             
             Du kan [hitta lediga tider och boka ett tillfälle som passar dig via denna sidan](https://outlook.office365.com/owa/calendar/Hgskolebiblioteket@JonkopingUniversity.onmicrosoft.com/bookings/). Om du föredrar kan vi istället komma överens om en tid per mail om du föredrar att inte använda formuläret.
-            Om du har tid och lust kan du läsa på själv i [vår guide för talböcker](https://guides.library.ju.se/talboksguiden), men allt det viktiga kommer vi gå igenom under mötet.'
+            Om du har tid och lust kan du läsa på själv i [vår guide för talböcker](https://guides.library.ju.se/talboksguiden), men allt det viktiga kommer vi gå igenom under mötet.
   vars:
     - name: "form"
       type: "form"
@@ -63,14 +57,13 @@ matches:
         layout: "Namn: [[name]]"
 
 - trigger: ':booktalk'
-  markdown: 'Hi {{form.name}}.
-
-
-To get started with talking books we need to have an introduction that will take roughly 30 minutes. We will introduce how Legimus (the service from MTM, the Swedish Agency for Accessible Media) works and what other tools that are available to assist with your reading. During the meeting you will need to [approve the terms and conditions](https://old.legimus.se/Gemensamt/Dokument/Dokument/be22c7d7-8c1e-4c54-b032-4e36cc9dc0f1.pdf) as well as identify yourself with photo id. 
-
-
-You can [book a time that works for you with this form](https://outlook.office365.com/owa/calendar/Hgskolebiblioteket@JonkopingUniversity.onmicrosoft.com/bookings/) (the form is in swedish). However if you prefer we can book a time over e-mail. 
-You can [read more about our services in our guide for talking books](https://guides.library.ju.se/c.php?g=669348).'
+  markdown: |
+            Hi {{form.name}}.
+            
+            To get started with talking books we need to have an introduction that will take roughly 30 minutes. We will introduce how Legimus (the service from MTM, the Swedish Agency for Accessible Media) works and what other tools that are available to assist with your reading. During the meeting you will need to [approve the terms and conditions](https://old.legimus.se/Gemensamt/Dokument/Dokument/be22c7d7-8c1e-4c54-b032-4e36cc9dc0f1.pdf) as well as identify yourself with photo id. 
+            
+            You can [book a time that works for you with this form](https://outlook.office365.com/owa/calendar/Hgskolebiblioteket@JonkopingUniversity.onmicrosoft.com/bookings/) (the form is in swedish). However if you prefer we can book a time over e-mail. 
+            You can [read more about our services in our guide for talking books](https://guides.library.ju.se/c.php?g=669348).
   vars:
     - name: "form"
       type: "form"
@@ -78,27 +71,25 @@ You can [read more about our services in our guide for talking books](https://gu
         layout: "Name: [[name]]"
 
 - trigger: ':almasynk'
-  markdown: 'Hej. Vi skulle vilja ha följande användarkonto synkroniserat till Alma (bibliotekssystemet):
-
-
-{{clipboard}}
-
-
-Med vänlig hälsning,
-Gustav Lindqvist
-Högskolebiblioteket'
+  markdown: |
+            Hej. Vi skulle vilja ha följande användarkonto synkroniserat till Alma (bibliotekssystemet):
+            
+            {{clipboard}}
+            
+            Med vänlig hälsning,
+            Gustav Lindqvist
+            Högskolebiblioteket
   vars:
     - name: "clipboard"
       type: "clipboard"
 
 - trigger: ':zoomlänk'
-  markdown: 'Hej {{form.name}}.
-  
-
-Här är länken till mötet: {{clipboard}}
-
-
-Glöm inte att ha fotolegitimation tillgänglig och läs gärna igenom [användaravtalet för Legimus](https://www.legimus.se/Gemensamt/Dokument/Dokument/Låneregler.pdf) före mötet.'
+  markdown: |
+            Hej {{form.name}}.              
+            
+            Här är länken till mötet: {{clipboard}}            
+            
+            Glöm inte att ha fotolegitimation tillgänglig och läs gärna igenom [användaravtalet för Legimus](https://www.legimus.se/Gemensamt/Dokument/Dokument/Låneregler.pdf) före mötet.
   vars:
     - name: "clipboard"
       type: "clipboard"
