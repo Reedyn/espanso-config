@@ -51,7 +51,7 @@ matches:
   markdown: 'Hej {{form.name}}.
             
             
-            För att komma igång med talböcker behöver vi ha en introduktion på ungefär 30 minuter där vi går igenom hur Legimus (tjänsten från Myndigheten för tillgängliga medier som vi använder för talböcker) fungerar samt vilka andra verktyg som du kan få tillgång till. Under samtalet som vi har antingen på plats i biblioteket eller över videomöte (Zoom) kommer du att behöva godkänna [användaravtalet för Legimus](https://www.legimus.se/Gemensamt/Dokument/Dokument/Låneregler.pdf) samt legitimera dig med fotolegitimation.
+            För att komma igång med talböcker behöver vi ha en introduktion på ungefär 30 minuter där vi går igenom hur Legimus (tjänsten från Myndigheten för tillgängliga medier som vi använder för talböcker) fungerar samt vilka andra verktyg som du kan få tillgång till. Under samtalet som vi har antingen på plats i biblioteket eller över videomöte (Zoom) kommer du att behöva godkänna [användaravtalet för Legimus](https://old.legimus.se/Gemensamt/Dokument/Dokument/Låneregler.pdf) samt legitimera dig med fotolegitimation.
             
             
             Du kan [hitta lediga tider och boka ett tillfälle som passar dig via denna sidan](https://outlook.office365.com/owa/calendar/Hgskolebiblioteket@JonkopingUniversity.onmicrosoft.com/bookings/). Om du föredrar kan vi istället komma överens om en tid per mail om du föredrar att inte använda formuläret.
@@ -66,7 +66,7 @@ matches:
   markdown: 'Hi {{form.name}}.
 
 
-To get started with talking books we need to have an introduction that will take roughly 30 minutes. We will introduce how Legimus (the service from MTM, the Swedish Agency for Accessible Media) works and what other tools that are available to assist with your reading. During the meeting you will need to [approve the terms and conditions](https://www.legimus.se/Gemensamt/Dokument/Dokument/be22c7d7-8c1e-4c54-b032-4e36cc9dc0f1.pdf) as well as identify yourself with photo id. 
+To get started with talking books we need to have an introduction that will take roughly 30 minutes. We will introduce how Legimus (the service from MTM, the Swedish Agency for Accessible Media) works and what other tools that are available to assist with your reading. During the meeting you will need to [approve the terms and conditions](https://old.legimus.se/Gemensamt/Dokument/Dokument/be22c7d7-8c1e-4c54-b032-4e36cc9dc0f1.pdf) as well as identify yourself with photo id. 
 
 
 You can [book a time that works for you with this form](https://outlook.office365.com/owa/calendar/Hgskolebiblioteket@JonkopingUniversity.onmicrosoft.com/bookings/) (the form is in swedish). However if you prefer we can book a time over e-mail. 
