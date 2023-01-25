@@ -1,13 +1,6 @@
 parent: base
 matches:
 
-- trigger: :commit
-  replace: git commit -m "$|$"
-
-- trigger: ":rich"
-  markdown: "This *text* is **very rich**!"
-
-
 - trigger: ":ip"
   replace: "{{output}}"
   vars:
