@@ -10,16 +10,16 @@ matches:
       params:
         format: "%Y-%m-%d %H:%M:%S %:z"
 
-  # Outputs markdown link, with clipboard contents as the URL
-- triggers: [":md-link",":mdl"]
+# Outputs markdown link, with clipboard contents as the URL
+- trigger: ":link"
   replace: "[$|$]({{clipboard}})"
   vars:
     - name: "clipboard"
       type: "clipboard"
 
-  # Creates a HTML anchor element, with clipboard contents as href
-- triggers: [":html-link", ':alink']
-  replace: "<a href=\"{{clipboard}}\" />$|$</a>"
+# Outputs markdown reference link, with clipboard contents as the URL
+- trigger: ":ref"
+  replace: "[$|$]: {{clipboard}}"
   vars:
     - name: "clipboard"
       type: "clipboard"
