@@ -1,0 +1,28 @@
+parent: base
+matches:
+
+- triggers: [":today",':idag']
+  replace: "{{date}}"
+  vars:
+    - name: date
+      type: date
+      params:
+        format: "%Y-%m-%d"
+
+# a datetime string
+- triggers: [":now", ":time", ":nu"]
+  replace: "{{time}}"
+  vars:
+    - name: time
+      type: date
+      params:
+        format: "%H:%M"
+
+# a datetime string
+- trigger: ":datetime"
+  replace: "{{datetime}}"
+  vars:
+    - name: datetime
+      type: date
+      params:
+        format: "%Y-%m-%d %H:%M:%S %:z"

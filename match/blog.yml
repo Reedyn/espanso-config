@@ -95,20 +95,3 @@ matches:
 - trigger: ":row"
   replace: "<figure class=\"gallery-row\">$|$</figure>"
   label: "Insert a gallery-row figure."
-
-- triggers: [":today",':idag']
-  replace: "{{date}}"
-  vars:
-    - name: date
-      type: date
-      params:
-        format: "%Y-%m-%d"
-
-# a datetime string
-- trigger: ":datetime"
-  replace: "{{datetime}}"
-  vars:
-    - name: datetime
-      type: date
-      params:
-        format: "%Y-%m-%d %H:%M:%S %:z"
