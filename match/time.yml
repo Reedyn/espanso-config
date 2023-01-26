@@ -1,6 +1,7 @@
 parent: base
 matches:
 
+# Current date
 - triggers: [":today",':idag']
   replace: "{{date}}"
   vars:
@@ -9,7 +10,7 @@ matches:
       params:
         format: "%Y-%m-%d"
 
-# a datetime string
+# Current time
 - triggers: [":now", ":time", ":nu"]
   replace: "{{time}}"
   vars:
@@ -18,11 +19,20 @@ matches:
       params:
         format: "%H:%M"
 
-# a datetime string
+# Datetime string with seconds and timezone
 - trigger: ":datetime"
   replace: "{{datetime}}"
   vars:
     - name: datetime
       type: date
       params:
-        format: "%Y-%m-%d %H:%M:%S %:z"
+        format: "%Y-%m-%d %H:%M:%S %+z"
+
+# RFC3339 & ISO8601 compatible full date string
+- triggers: [":rfcdate", ":isodate"]
+  replace: "{{datetime}}"
+  vars:
+    - name: datetime
+      type: date
+      params:
+        format: "%+"
