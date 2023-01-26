@@ -4,17 +4,29 @@ global_vars:
     type: echo
     params:
       echo: "gustav.lindqvist@ju.se"
+
 matches:
+
 - trigger: :jumvh
+  label: "Med vänlig hälsning…Högskolebiblioteket…"
   html: 'Med vänlig hälsning,<br>{{myname}}<br>Högskolebiblioteket i Jönköping'
+
 - trigger: :juregards
+  label: "Best regards…Jönköping University Library"
   html: 'Best regards,<br>{{myname}}<br>Jönköping University Library'
+
 - trigger: :jutal
+  label: "Long JU-signature for talking books (swedish)."
   html: '<div style="font-size:10.0pt;color:black;"><p style="font-family:&quot;Arial&quot;,sans-serif;">Med vänlig hälsning,<br><b>{{myname}}</b><br><span style="font-family:&quot;Georgia&quot;,serif;"><i>Webbutvecklare</i></span><br></p><p style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;color:black;background:white">———————————————</p><p><span style="font-family:&quot;Georgia&quot;,serif;"><i>Högskolebiblioteket</i></span><br><span style="font-family:&quot;Arial&quot;,sans-serif;"><b>JÖNKÖPING UNIVERSITY</b></span><br><span style="font-family:&quot;Arial&quot;,sans-serif;"><b>E-POST</b></span> <a style="font-family:&quot;Georgia&quot;,serif;" href="mailto:talbok.biblioteket@ju.se">talbok.biblioteket@ju.se</a><br><span style="font-family:&quot;Arial&quot;,sans-serif;"><b>WEBB</b></span> <a style="font-family:&quot;Georgia&quot;,serif;" href="https://ju.se/talbok">ju.se/talbok</a></p></div>'
+
 - trigger: :jusv
+  label: "Long JU-signature (swedish)."
   html: '<div style="font-size:10.0pt;color:black;"><p style="font-family:&quot;Arial&quot;,sans-serif;">Med vänlig hälsning,<br><b>{{myname}}</b><br><span style="font-family:&quot;Georgia&quot;,serif;"><i>Webbutvecklare</i></span><br></p><p style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;color:black;background:white">———————————————</p><p><span style="font-family:&quot;Georgia&quot;,serif;"><i>Högskolebiblioteket</i></span><br><span style="font-family:&quot;Arial&quot;,sans-serif;"><b>JÖNKÖPING UNIVERSITY</b></span><br><span style="font-family:&quot;Arial&quot;,sans-serif;"><b>E-POST</b></span> <a style="font-family:&quot;Georgia&quot;,serif;" href="mailto:{{juemail}}">{{juemail}}</a><br><span style="font-family:&quot;Arial&quot;,sans-serif;"><b>WEBB</b></span> <a style="font-family:&quot;Georgia&quot;,serif;" href="https://ju.se/bibliotek">ju.se/bibliotek</a></p></div>'
+
 - trigger: :juen
+  label: "Long JU-signature"
   html: '<div style="font-size:10.0pt;color:black;"><p style="font-family:&quot;Arial&quot;,sans-serif;">Best regards,<br><b>{{myname}}</b><br><span style="font-family:&quot;Georgia&quot;,serif;"><i>Web Developer</i></span><br></p><p style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;color:black;background:white">———————————————</p><p><span style="font-family:&quot;Georgia&quot;,serif;"><i>University Library</i></span><br><span style="font-family:&quot;Arial&quot;,sans-serif;"><b>JÖNKÖPING UNIVERSITY</b></span><br><span style="font-family:&quot;Arial&quot;,sans-serif;"><b>E-POST</b></span> <a style="font-family:&quot;Georgia&quot;,serif;" href="mailto:{{juemail}})">{{juemail}}</a><br><span style="font-family:&quot;Arial&quot;,sans-serif;"><b>WEBB</b></span> <a style="font-family:&quot;Georgia&quot;,serif;" href="https://ju.se/library">ju.se/library</a></p></div>'
+
 
 - trigger: ":talintro"
   replace: "Talboksintroduktion med {{clipboard}}"
@@ -43,6 +55,7 @@ matches:
       type: "clipboard"
 
 - trigger: ':bokatal'
+  label: "Message for students with information about booking a talking book meeting (swedish)."
   markdown: |
             Hej {{form.name}}.            
             
@@ -57,6 +70,7 @@ matches:
         layout: "Namn: [[name]]"
 
 - trigger: ':booktalk'
+  label: "Message for students with information about booking a talking book meeting (english)."
   markdown: |
             Hi {{form.name}}.
             

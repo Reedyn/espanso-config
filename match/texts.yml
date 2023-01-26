@@ -4,9 +4,11 @@ global_vars:
     type: echo
     params:
       echo: "Gustav Lindqvist"
+
 matches:
-  
+
 - trigger: :mvh
   html: 'Med vänlig hälsning,<br>{{myname}}'
+
 - trigger: :regards
   html: 'Best regards,<br>{{myname}}'

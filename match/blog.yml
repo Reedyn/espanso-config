@@ -1,9 +1,10 @@
 parent: base
 matches:
 
-# Insert front matter
+# front matter
 - triggers: [":frontmatter",':fm']
   replace: "---\ntitle: \"$|$\"\ndescription: \"\"\nfeature_image: \"\"\ndate: {{datetime}}\ntags:\n---"
+  label: "frontmatter block with title, description, feature image, date and tags"
   vars:
     - name: datetime
       type: date
@@ -25,33 +26,45 @@ matches:
       type: "clipboard"
 
 # Inserts a markdown code block
-- triggers: [":md-code"]
+- triggers: [":md-code",":blockcode"]
   replace: "```\n$|$\n```"
 
 # Auto close brackets, quotes and formatting modifiers, and put cursor in center
 - trigger: ':(('
   replace: '($|$)'
+  label: "(parentheses)"
+
 - trigger: ':[['
   replace: '[$|$]'
+  label: "[brackets]"
+
 - trigger: ':{{'
   replace: '{$|$}'
-- trigger: ':<<'
-  replace: '<$|$>'
-- trigger: ':``'
+  label: "{curly brackets}"
+
+- triggers: [':``', ':code`']
   replace: '`$|$`'
+  label: "`back ticks`"
+
 - trigger: ":\''"
   replace: "\'$|$\'"
+  label: "'single quotes'"
+
 - trigger: ':""'
   replace: '"$|$"'
+  label: "\"quotes\""
+
 - trigger: ':__'
   replace: '_$|$_'
+  label: "_underscores_"
+
 - trigger: ':**'
   replace: '*$|$*'
+  label: "*asterisks*"
 
-
-# Insert an image according to the Nunjucks syntax.
 - trigger: ":image"
   replace: "{% image \"{{clipboard}}\", \"{{style}}\", \"$|$\" %}"
+  label: "Insert a an image according to nunjucks custom syntax."
   vars:
     - name: "clipboard"
       type: "clipboard"
@@ -68,9 +81,9 @@ matches:
           - label: "Full width"
             id: "-full"
 
-# Insert a gallery figure
 - trigger: ":gallery"
   replace: "<figure class=\"gallery {{style}}\">$|$</figure>"
+  label: "Insert a gallery figure."
   vars:
      - name: "style"
        type: choice
@@ -78,14 +91,11 @@ matches:
          values:
            - label: "Default"
              id: ""
-           - label: "Wide"
-             id: "-wide"
 
-# Insert a gallery row figure
 - trigger: ":row"
   replace: "<figure class=\"gallery-row\">$|$</figure>"
+  label: "Insert a gallery-row figure."
 
-# Insert a date string
 - triggers: [":today",':idag']
   replace: "{{date}}"
   vars:
@@ -94,7 +104,7 @@ matches:
       params:
         format: "%Y-%m-%d"
 
-# Insert a datetime string
+# a datetime string
 - trigger: ":datetime"
   replace: "{{datetime}}"
   vars:

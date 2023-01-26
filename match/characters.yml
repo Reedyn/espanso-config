@@ -3,13 +3,24 @@ matches:
 
 - triggers: ["-->", ":rarrow"]
   replace: "→"
+  label: "Right arrow"
+
 - triggers: ["<--", ":larrow"]
   replace: "←"
+  label: "Left arrow"
+
 - triggers: ["<->", ":lrarrow"]
   replace: "⟷"
+  label: "Left-right arrow"
+
 - triggers: [":uarrow"]
   replace: "↑"
+  label: "Up arrow"
+
 - triggers: [":darrow"]
   replace: "↓"
+  label: "Down arrow"
+
 - triggers: [":check"]
   replace: "✓"
+  label: "Checkmark"
