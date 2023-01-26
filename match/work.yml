@@ -38,13 +38,12 @@ matches:
   markdown: |
             Här kommer lite bra resurser för talböcker.
             
-            
-            * [Legimus](https://www.legimus.se/) – Tjänst för att söka och läsa talböcker som hanteras av MTM. Finns även i en mobilapp.            
-            * [MTM](https://www.mtm.se/) – Myndigheten för tillgängliga medier            
-            * [EasyReader](https://www.legimus.se/100276/lasa-talbocker-och-e-text) – Läsprogram för dator för att läsa talböcker i Daisy-format            
-            * [TorTalk](https://ju.se/it-helpdesk/faq---manualer/program/tortalk.html) – Talsyntes för Windows och Mac OS som kan läsa upp markerad text på dator. Kan även läsa text på en bild med OCR.            
-            * [Bibliotekets guide för talböcker och talsynteser](https://guides.library.ju.se/talboksguiden)          
-            * [SPS](https://ju.se/student/service/stod-for-studenter-med-funktionsnedsattning-sps.html) – Stöd för studenter med funktionsnedsättning            
+            * [Legimus](https://www.legimus.se/) – Tjänst för att söka och läsa talböcker som hanteras av MTM. Finns även i en mobilapp.
+            * [MTM](https://www.mtm.se/) – Myndigheten för tillgängliga medier
+            * [EasyReader](https://www.legimus.se/100276/lasa-talbocker-och-e-text) – Läsprogram för dator för att läsa talböcker i Daisy-format
+            * [TorTalk](https://ju.se/it-helpdesk/faq---manualer/program/tortalk.html) – Talsyntes för Windows och Mac OS som kan läsa upp markerad text på dator. Kan även läsa text på en bild med OCR.
+            * [Bibliotekets guide för talböcker och talsynteser](https://guides.library.ju.se/talboksguiden)
+            * [SPS](https://ju.se/student/service/stod-for-studenter-med-funktionsnedsattning-sps.html) – Stöd för studenter med funktionsnedsättning
             
             Om det är något som du undrar kring någon av tjänsterna så är det bara att kontakta oss så hjälper vi till.
 
@@ -57,9 +56,9 @@ matches:
 - trigger: ':bokatal'
   label: "Message for students with information about booking a talking book meeting (swedish)."
   markdown: |
-            Hej {{form.name}}.            
+            Hej {{form.name}}.
             
-            För att komma igång med talböcker behöver vi ha en introduktion på ungefär 30 minuter där vi går igenom hur Legimus (tjänsten från Myndigheten för tillgängliga medier som vi använder för talböcker) fungerar samt vilka andra verktyg som du kan få tillgång till. Under samtalet som vi har antingen på plats i biblioteket eller över videomöte (Zoom) kommer du att behöva godkänna [användaravtalet för Legimus](https://old.legimus.se/Gemensamt/Dokument/Dokument/Låneregler.pdf) samt legitimera dig med fotolegitimation.            
+            För att komma igång med talböcker behöver vi ha en introduktion på ungefär 30 minuter där vi går igenom hur Legimus (tjänsten från Myndigheten för tillgängliga medier som vi använder för talböcker) fungerar samt vilka andra verktyg som du kan få tillgång till. Under samtalet som vi har antingen på plats i biblioteket eller över videomöte (Zoom) kommer du att behöva godkänna [användaravtalet för Legimus](https://old.legimus.se/Gemensamt/Dokument/Dokument/Låneregler.pdf) samt legitimera dig med fotolegitimation.
             
             Du kan [hitta lediga tider och boka ett tillfälle som passar dig via denna sidan](https://outlook.office365.com/owa/calendar/Hgskolebiblioteket@JonkopingUniversity.onmicrosoft.com/bookings/). Om du föredrar kan vi istället komma överens om en tid per mail om du föredrar att inte använda formuläret.
             Om du har tid och lust kan du läsa på själv i [vår guide för talböcker](https://guides.library.ju.se/talboksguiden), men allt det viktiga kommer vi gå igenom under mötet.
@@ -99,9 +98,9 @@ matches:
 
 - trigger: ':zoomlänk'
   markdown: |
-            Hej {{form.name}}.              
+            Hej {{form.name}}.
             
-            Här är länken till mötet: {{clipboard}}            
+            Här är länken till mötet: {{clipboard}}
             
             Glöm inte att ha fotolegitimation tillgänglig och läs gärna igenom [användaravtalet för Legimus](https://www.legimus.se/Gemensamt/Dokument/Dokument/Låneregler.pdf) före mötet.
   vars:
