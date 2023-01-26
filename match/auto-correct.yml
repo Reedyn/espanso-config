@@ -11,6 +11,11 @@ matches:
   propagate_case: true
   word: true
 
+- triggers: ["isåfall"]
+  replace: "i så fall"
+  propagate_case: true
+  word: true
+
 - triggers: ["abbonemang", "abonemang", "abbonnemang"]
   replace: "abonnemang"
   propagate_case: true
