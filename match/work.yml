@@ -40,7 +40,7 @@ matches:
             
             * [Legimus](https://www.legimus.se/) – Tjänst för att söka och läsa talböcker som hanteras av MTM. Finns även i en mobilapp.
             * [MTM](https://www.mtm.se/) – Myndigheten för tillgängliga medier
-            * [EasyReader](https://www.legimus.se/100276/lasa-talbocker-och-e-text) – Läsprogram för dator för att läsa talböcker i Daisy-format
+            * [EasyReader](https://www.legimus.se/anvaenda-legimus/laes-paa-fler-saett/laes-med-easyreader/) – Läsprogram för dator för att läsa talböcker i Daisy-format
             * [TorTalk](https://ju.se/it-helpdesk/faq---manualer/program/tortalk.html) – Talsyntes för Windows och Mac OS som kan läsa upp markerad text på dator. Kan även läsa text på en bild med OCR.
             * [Bibliotekets guide för talböcker och talsynteser](https://guides.library.ju.se/talboksguiden)
             * [SPS](https://ju.se/student/service/stod-for-studenter-med-funktionsnedsattning-sps.html) – Stöd för studenter med funktionsnedsättning
@@ -102,7 +102,7 @@ matches:
             
             Här är länken till mötet: {{clipboard}}
             
-            Glöm inte att ha fotolegitimation tillgänglig och läs gärna igenom [användaravtalet för Legimus](https://www.legimus.se/Gemensamt/Dokument/Dokument/Låneregler.pdf) före mötet.
+            Glöm inte att ha fotolegitimation tillgänglig och läs gärna igenom [användaravtalet för Legimus](https://old.legimus.se/Gemensamt/Dokument/Dokument/Låneregler.pdf) före mötet.
   vars:
     - name: "clipboard"
       type: "clipboard"
