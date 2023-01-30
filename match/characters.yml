@@ -1,6 +1,7 @@
 parent: base
 matches:
 
+#Arrows
 - triggers: ["-->", ":rarrow"]
   replace: "→"
   label: "Right arrow"
@@ -21,6 +22,45 @@ matches:
   replace: "↓"
   label: "Down arrow"
 
+# Other symbols
 - triggers: [":check"]
   replace: "✓"
   label: "Checkmark"
+
+
+# Fractions
+- trigger: "1/2"
+  replace: "½"
+  word: true
+
+- trigger: "1/3"
+  replace: "⅓"
+  word: true
+
+- trigger: "1/4"
+  replace: "¼"
+  word: true
+
+- trigger: "1/8"
+  replace: "⅛"
+  word: true
+
+- trigger: "2/3"
+  replace: "⅔"
+  word: true
+
+- trigger: "3/4"
+  replace: "¾"
+  word: true
+
+- trigger: "3/8"
+  replace: "⅜"
+  word: true
+
+- trigger: "5/8"
+  replace: "⅝"
+  word: true
+
+- trigger: "7/8"
+  replace: "⅞"
+  word: true
