@@ -16,6 +16,11 @@ matches:
   propagate_case: true
   word: true
 
+- triggers: ["tills dess"]
+  replace: "till dess"
+  propagate_case: true
+  word: true
+
 - triggers: ["abbonemang", "abonemang", "abbonnemang"]
   replace: "abonnemang"
   propagate_case: true
