@@ -7,6 +7,12 @@ global_vars:
 
 matches:
 
+- trigger: :jul
+  replace: 'Jönköping University Library'
+
+- trigger: :jubibl
+  replace: 'Högskolebiblioteket i Jönköping'
+
 - trigger: :jumvh
   label: "Med vänlig hälsning…Högskolebiblioteket…"
   html: 'Med vänlig hälsning,<br>{{myname}}<br>Högskolebiblioteket i Jönköping'
