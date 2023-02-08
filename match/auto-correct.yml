@@ -30,7 +30,3 @@ matches:
   replace: "litteratur"
   propagate_case: true
   word: true
-
-- regex: "[Gg]armin\\s[Ff]enix"
-  replace: "Garmin fēnix"
-

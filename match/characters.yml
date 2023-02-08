@@ -27,7 +27,6 @@ matches:
   replace: "✓"
   label: "Checkmark"
 
-
 # Fractions
 - trigger: "1/2"
   replace: "½"
@@ -64,3 +63,8 @@ matches:
 - trigger: "7/8"
   replace: "⅞"
   word: true
+
+# Emojis
+
+- trigger: ":sadcat"
+  replace: "😿"
