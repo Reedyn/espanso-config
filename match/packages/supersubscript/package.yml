@@ -1,242 +1,81 @@
 # Superscripts and subscripts package
 
 matches:
-
-  # superscripts
-
-  - trigger: ":sup0"
-    replace: "⁰"
-
-  - trigger: ":sup1"
-    replace: "¹"
-
-  - trigger: ":sup2"
-    replace: "²"
-
-  - trigger: ":sup3"
-    replace: "³"
-
-  - trigger: ":sup4"
-    replace: "⁴"
-
-  - trigger: ":sup5"
-    replace: "⁵"
-
-  - trigger: ":sup6"
-    replace: "⁶"
-
-  - trigger: ":sup7"
-    replace: "⁷"
-
-  - trigger: ":sup8"
-    replace: "⁸"
-
-  - trigger: ":sup9"
-    replace: "⁹"
-
-  - trigger: ":sup+"
-    replace: "⁺"
-
-  - trigger: ":sup-"
-    replace: "⁻"
-    
-  - trigger: ":sup="
-    replace: "⁼"
-
-  - trigger: ":sup("
-    replace: "⁽"
-
-  - trigger: ":sup)"
-    replace: "⁾"
-
-  - trigger: ":supA"
-    replace: "ᴬ"
-
-  - trigger: ":supB"
-    replace: "ᴮ"
-
-  - trigger: ":supD"
-    replace: "ᴰ"
-
-  - trigger: ":supE"
-    replace: "ᴱ"
-
-  - trigger: ":supG"
-    replace: "ᴳ"
-
-  - trigger: ":supH"
-    replace: "ᴴ"
-
-  - trigger: ":supI"
-    replace: "ᴵ"
-
-  - trigger: ":supJ"
-    replace: "ᴶ"
-
-  - trigger: ":supK"
-    replace: "ᴷ"
-
-  - trigger: ":supL"
-    replace: "ᴸ"
-
-  - trigger: ":supM"
-    replace: "ᴹ"
-
-  - trigger: ":supN"
-    replace: "ᴺ"
-
-  - trigger: ":supO"
-    replace: "ᴼ"
-
-  - trigger: ":supP"
-    replace: "ᴾ"
-
-  - trigger: ":supR"
-    replace: "ᴿ"
-
-  - trigger: ":supT"
-    replace: "ᵀ"
-
-  - trigger: ":supU"
-    replace: "ᵁ"
-
-  - trigger: ":supW"
-    replace: "ᵂ"
-
-  - trigger: ":supa"
-    replace: "ᵃ"
-
-  - trigger: ":supb"
-    replace: "ᵇ"
-
-  - trigger: ":supd"
-    replace: "ᵈ"
-
-  - trigger: ":supe"
-    replace: "ᵉ"
-
-  - trigger: ":supg"
-    replace: "ᵍ"
-
-  - trigger: ":supi"
-    replace: "ⁱ"
-
-  - trigger: ":supk"
-    replace: "ᵏ"
-
-  - trigger: ":supm"
-    replace: "ᵐ"
-
-  - trigger: ":supn"
-    replace: "ⁿ"
-
-  - trigger: ":supo"
-    replace: "ᵒ"
-
-  - trigger: ":supp"
-    replace: "ᵖ"
-
-  - trigger: ":supt"
-    replace: "ᵗ"
-
-  - trigger: ":supu"
-    replace: "ᵘ"
-
-  - trigger: ":supv"
-    replace: "ᵛ"
-
-
-  # subscripts
-
-  - trigger: ":sub0"
-    replace: "₀"
-
-  - trigger: ":sub1"
-    replace: "₁"
-
-  - trigger: ":sub2"
-    replace: "₂"
-
-  - trigger: ":sub3"
-    replace: "₃"
-
-  - trigger: ":sub4"
-    replace: "₄"
-
-  - trigger: ":sub5"
-    replace: "₅"
-
-  - trigger: ":sub6"
-    replace: "₆"
-
-  - trigger: ":sub7"
-    replace: "₇"
-
-  - trigger: ":sub8"
-    replace: "₈"
-
-  - trigger: ":sub9"
-    replace: "₉"
-
-  - trigger: ":sub+"
-    replace: "₊"
-
-  - trigger: ":sub-"
-    replace: "₋"
-
-  - trigger: ":sub="
-    replace: "₌"
-
-  - trigger: ":sub("
-    replace: "₍"
-
-  - trigger: ":sub)"
-    replace: "₎"
-
-  - trigger: ":suba"
-    replace: "ₐ"
-
-  - trigger: ":sube"
-    replace: "ₑ"
-
-  - trigger: ":subh"
-    replace: "ₕ"
-
-  - trigger: ":subi"
-    replace: "ᵢ"
-
-  - trigger: ":subk"
-    replace: "ₖ"
-
-  - trigger: ":subl"
-    replace: "ₗ"
-
-  - trigger: ":subm"
-    replace: "ₘ"
-
-  - trigger: ":subn"
-    replace: "ₙ"
-
-  - trigger: ":subo"
-    replace: "ₒ"
-
-  - trigger: ":subp"
-    replace: "ₚ"
-
-  - trigger: ":subr"
-    replace: "ᵣ"
-
-  - trigger: ":subs"
-    replace: "ₛ"
-
-  - trigger: ":subt"
-    replace: "ₜ"
-
-  - trigger: ":subu"
-    replace: "ᵤ"
-
-  - trigger: ":subv"
-    replace: "ᵥ"
-
-  - trigger: ":subx"
-    replace: "ₓ"
+  - { trigger: ":sup0", replace: "⁰" }
+  - { trigger: ":sup1", replace: "¹" }
+  - { trigger: ":sup2", replace: "²" }
+  - { trigger: ":sup3", replace: "³" }
+  - { trigger: ":sup4", replace: "⁴" }
+  - { trigger: ":sup5", replace: "⁵" }
+  - { trigger: ":sup6", replace: "⁶" }
+  - { trigger: ":sup7", replace: "⁷" }
+  - { trigger: ":sup8", replace: "⁸" }
+  - { trigger: ":sup9", replace: "⁹" }
+  - { trigger: ":sup+", replace: "⁺" }
+  - { trigger: ":sup-", replace: "⁻" }
+  - { trigger: ":sup=", replace: "⁼" }
+  - { trigger: ":sup(", replace: "⁽" }
+  - { trigger: ":sup)", replace: "⁾" }
+  - { trigger: ":supA", replace: "ᴬ" }
+  - { trigger: ":supB", replace: "ᴮ" }
+  - { trigger: ":supD", replace: "ᴰ" }
+  - { trigger: ":supE", replace: "ᴱ" }
+  - { trigger: ":supG", replace: "ᴳ" }
+  - { trigger: ":supH", replace: "ᴴ" }
+  - { trigger: ":supI", replace: "ᴵ" }
+  - { trigger: ":supJ", replace: "ᴶ" }
+  - { trigger: ":supK", replace: "ᴷ" }
+  - { trigger: ":supL", replace: "ᴸ" }
+  - { trigger: ":supM", replace: "ᴹ" }
+  - { trigger: ":supN", replace: "ᴺ" }
+  - { trigger: ":supO", replace: "ᴼ" }
+  - { trigger: ":supP", replace: "ᴾ" }
+  - { trigger: ":supR", replace: "ᴿ" }
+  - { trigger: ":supT", replace: "ᵀ" }
+  - { trigger: ":supU", replace: "ᵁ" }
+  - { trigger: ":supW", replace: "ᵂ" }
+  - { trigger: ":supa", replace: "ᵃ" }
+  - { trigger: ":supb", replace: "ᵇ" }
+  - { trigger: ":supd", replace: "ᵈ" }
+  - { trigger: ":supe", replace: "ᵉ" }
+  - { trigger: ":supg", replace: "ᵍ" }
+  - { trigger: ":supi", replace: "ⁱ" }
+  - { trigger: ":supk", replace: "ᵏ" }
+  - { trigger: ":supm", replace: "ᵐ" }
+  - { trigger: ":supn", replace: "ⁿ" }
+  - { trigger: ":supo", replace: "ᵒ" }
+  - { trigger: ":supp", replace: "ᵖ" }
+  - { trigger: ":supt", replace: "ᵗ" }
+  - { trigger: ":supu", replace: "ᵘ" }
+  - { trigger: ":supv", replace: "ᵛ" }
+  - { trigger: ":sub0", replace: "₀" }
+  - { trigger: ":sub1", replace: "₁" }
+  - { trigger: ":sub2", replace: "₂" }
+  - { trigger: ":sub3", replace: "₃" }
+  - { trigger: ":sub4", replace: "₄" }
+  - { trigger: ":sub5", replace: "₅" }
+  - { trigger: ":sub6", replace: "₆" }
+  - { trigger: ":sub7", replace: "₇" }
+  - { trigger: ":sub8", replace: "₈" }
+  - { trigger: ":sub9", replace: "₉" }
+  - { trigger: ":sub+", replace: "₊" }
+  - { trigger: ":sub-", replace: "₋" }
+  - { trigger: ":sub=", replace: "₌" }
+  - { trigger: ":sub(", replace: "₍" }
+  - { trigger: ":sub)", replace: "₎" }
+  - { trigger: ":suba", replace: "ₐ" }
+  - { trigger: ":sube", replace: "ₑ" }
+  - { trigger: ":subh", replace: "ₕ" }
+  - { trigger: ":subi", replace: "ᵢ" }
+  - { trigger: ":subk", replace: "ₖ" }
+  - { trigger: ":subl", replace: "ₗ" }
+  - { trigger: ":subm", replace: "ₘ" }
+  - { trigger: ":subn", replace: "ₙ" }
+  - { trigger: ":subo", replace: "ₒ" }
+  - { trigger: ":subp", replace: "ₚ" }
+  - { trigger: ":subr", replace: "ᵣ" }
+  - { trigger: ":subs", replace: "ₛ" }
+  - { trigger: ":subt", replace: "ₜ" }
+  - { trigger: ":subu", replace: "ᵤ" }
+  - { trigger: ":subv", replace: "ᵥ" }
+  - { trigger: ":subx", replace: "ₓ" }

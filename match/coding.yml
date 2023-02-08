@@ -1,10 +1,4 @@
 parent: base
 matches:
-
-# Commit terminal command
-- trigger: :commit
-  replace: git commit -m "$|$"
-
-# Inserts CSS variable
-- trigger: ":var"
-  replace: "var(--$|$)"
+  - { trigger: ":commit", replace: "git commit -m \"$|$\""}
+  - { trigger: ":var",    replace: "var(--$|$)"}
