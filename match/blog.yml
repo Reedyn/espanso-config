@@ -91,7 +91,16 @@ matches:
          values:
            - label: "Default"
              id: ""
+           - label: "Wide"
+             id: "-wide"
 
 - trigger: ":row"
   replace: "<figure class=\"gallery-row\">$|$</figure>"
   label: "Insert a gallery-row figure."
+
+- trigger: ":caption"
+  replace: "<figcaption><p>{{clipboard}}</p></figcaption>"
+  label: "Insert a figcaption element"
+  vars:
+    - name: "clipboard"
+      type: "clipboard"
