@@ -26,7 +26,7 @@ matches:
     - name: datetime
       type: date
       params:
-        format: "%Y-%m-%d %H:%M:%S %+z"
+        format: "%Y-%m-%d %H:%M:%S %z"
 
 # RFC3339 & ISO8601 compatible full date string
 - triggers: [":rfcdate", ":isodate"]

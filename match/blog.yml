@@ -95,8 +95,17 @@ matches:
              id: " -wide"
 
 - trigger: ":row"
-  replace: "<figure class=\"gallery-row\">$|$</figure>"
+  replace: "<figure class=\"gallery-row{{style}}\">$|$</figure>"
   label: "Insert a gallery-row figure."
+  vars:
+    - name: "style"
+      type: choice
+      params:
+        values:
+          - label: "Default"
+            id: ""
+          - label: "No wrap"
+            id: " -no-wrap"
 
 - trigger: ":caption"
   replace: "<figcaption><p>{{clipboard}}</p></figcaption>"
