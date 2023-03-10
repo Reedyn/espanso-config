@@ -92,9 +92,7 @@ matches:
 - trigger: ':almasynk'
   markdown: |
             Hej. Vi skulle vilja ha följande användarkonto synkroniserat till Alma (bibliotekssystemet):
-            
             {{clipboard}}
-            
             Med vänlig hälsning,
             Gustav Lindqvist
             Högskolebiblioteket
