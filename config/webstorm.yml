@@ -1,2 +1,4 @@
 filter_exec: webstorm
-backend: clipboard
+filter_class: jetbrains_webstorm
+backend: Clipboard
+
