@@ -27,6 +27,11 @@ matches:
   replace: "✓"
   label: "Checkmark"
 
+# Other symbols
+- triggers: [":ib",":interrobang", "!?", "?!"]
+  replace: "‽"
+  label: "Interrobang"
+
 # Fractions
 - trigger: "1/2"
   replace: "½"
