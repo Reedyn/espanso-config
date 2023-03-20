@@ -2,7 +2,7 @@ parent: base
 matches:
 
 # Current date
-- triggers: [":today",':idag']
+- triggers: [":today",':idag', ':date']
   replace: "{{date}}"
   vars:
     - name: date
