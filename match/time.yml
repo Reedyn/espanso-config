@@ -35,4 +35,4 @@ matches:
     - name: datetime
       type: date
       params:
-        format: "%+"
+        format: "%Y-%m-%dT%H:%M:%S%z"
