@@ -29,7 +29,7 @@ matches:
         format: "%Y-%m-%d %H:%M:%S %z"
 
 # RFC3339 & ISO8601 compatible full date string
-- triggers: [":rfcdate", ":isodate", "rfc3339", "iso8601"]
+- triggers: [":rfcdate", ":isodate", ":rfc3339", ":iso8601"]
   replace: "{{datetime}}"
   vars:
     - name: datetime
