@@ -1,0 +1,14 @@
+parent: base
+matches:
+
+- trigger: ":blogpost"
+  markdown: |
+            📝 Nytt på bloggen!
+    
+            {{clipboard}}$|$
+    
+            🗫 Svar visas som kommentarer på bloggen
+  label: "Insert a figcaption element"
+  vars:
+    - name: "clipboard"
+      type: "clipboard"

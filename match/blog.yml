@@ -113,3 +113,18 @@ matches:
   vars:
     - name: "clipboard"
       type: "clipboard"
+
+- trigger: ":style"
+  replace: "{{style}}"
+  label: "Insert a figcaption element"
+  vars:
+    - name: "style"
+      type: choice
+      params:
+        values:
+          - label: "Wide"
+            id: "{.-wide}"
+          - label: "Full"
+            id: "{.-full}"
+          - label: "Inline (gallery)"
+            id: "{.-inline}"
