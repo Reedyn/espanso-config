@@ -63,7 +63,7 @@ matches:
   label: "*asterisks*"
 
 - trigger: ":image"
-  replace: "{% image \"{{clipboard}}\", \"{{style}}\", \"$|$\" %}"
+  replace: "![$|$]({{clipboard}}){{style}}"
   label: "Insert a an image according to nunjucks custom syntax."
   vars:
     - name: "clipboard"
@@ -75,14 +75,14 @@ matches:
           - label: "Default"
             id: ""
           - label: "Inline"
-            id: "-inline"
+            id: "{.-inline}"
           - label: "Wide"
-            id: "-wide"
+            id: "{.-wide}"
           - label: "Full width"
-            id: "-full"
+            id: "{.-full}"
 
 - trigger: ":gallery"
-  replace: "<figure class=\"gallery{{style}}\">$|$</figure>"
+  replace: ":::: gallery{{style}}\n$|$\n::::"
   label: "Insert a gallery figure."
   vars:
      - name: "style"
@@ -92,10 +92,10 @@ matches:
            - label: "Default"
              id: ""
            - label: "Wide"
-             id: " -wide"
+             id: " {.-wide}"
 
 - trigger: ":row"
-  replace: "<figure class=\"gallery-row{{style}}\">$|$</figure>"
+  replace: "::: row{{style}}\n$|$\n:::"
   label: "Insert a gallery-row figure."
   vars:
     - name: "style"
@@ -105,7 +105,7 @@ matches:
           - label: "Default"
             id: ""
           - label: "No wrap"
-            id: " -no-wrap"
+            id: " {.-no-wrap}"
 
 - trigger: ":caption"
   replace: "<figcaption><p>{{clipboard}}</p></figcaption>"
@@ -113,3 +113,18 @@ matches:
   vars:
     - name: "clipboard"
       type: "clipboard"
+
+- trigger: ":style"
+  replace: "{{style}}"
+  label: "Insert a figcaption element"
+  vars:
+    - name: "style"
+      type: choice
+      params:
+        values:
+          - label: "Wide"
+            id: "{.-wide}"
+          - label: "Full"
+            id: "{.-full}"
+          - label: "Inline (gallery)"
+            id: "{.-inline}"
