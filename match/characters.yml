@@ -14,11 +14,11 @@ matches:
   replace: "⟷"
   label: "Left-right arrow"
 
-- triggers: [":uarrow"]
+- triggers: [":uarrow",":uparrow"]
   replace: "↑"
   label: "Up arrow"
 
-- triggers: [":darrow"]
+- triggers: [":darrow", "downarrow"]
   replace: "↓"
   label: "Down arrow"
 
