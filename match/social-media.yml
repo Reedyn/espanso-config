@@ -7,7 +7,7 @@ matches:
     
             {{clipboard}}$|$
     
-            🗫 Svar visas som kommentarer på bloggen
+            🗫 Publika svar visas som kommentarer
   label: "Insert a figcaption element"
   vars:
     - name: "clipboard"
