@@ -27,10 +27,13 @@ matches:
   replace: "✓"
   label: "Checkmark"
 
-# Other symbols
 - triggers: [":ib",":interrobang", "!?", "?!"]
   replace: "‽"
   label: "Interrobang"
+
+- triggers: [":shy",":softhyphen"]
+  replace: "­"
+  label: "Soft hyphen"
 
 # Fractions
 - trigger: "1/2"
