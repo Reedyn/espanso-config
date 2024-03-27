@@ -107,7 +107,7 @@ matches:
           - label: "No wrap"
             id: " {.-no-wrap}"
 - trigger: ":fleuron"
-  replace: "<p class=\"fleuron\" aria-hidden=\"true\">✃⁂𐡷➤✎</p>"
+  replace: "<p class=\"fleuron\" aria-hidden=\"true\">✃⁂➤✎☘☂⛬</p>"
   label: "Insert a fleuron."
 
 - trigger: ":caption"
